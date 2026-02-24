@@ -2,24 +2,34 @@ pipeline {
     agent any
 
     stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Checking out source code...'
+            }
+        }
+
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'echo Build logic goes here'
+                echo 'Building DaveCom-Retail application...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running unit tests...'
-                sh 'echo Test logic goes here'
+                echo 'Running automated tests...'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                echo 'Simulating Docker image build...'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying to staging...'
-                sh 'echo Deploy logic goes here'
+                echo 'Deployment simulation complete.'
             }
         }
     }
