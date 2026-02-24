@@ -1,0 +1,24 @@
+{
+  "name": "davecom-retail",
+  "version": "1.0.0",
+  "description": "Agile Scrum E-commerce project for UK Retail System",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidbastola/DaveCom-Retail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidbastola/DaveCom-Retail/issues"
+  },
+  "homepage": "https://github.com/davidbastola/DaveCom-Retail#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
